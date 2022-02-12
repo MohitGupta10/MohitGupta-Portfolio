@@ -17,7 +17,7 @@ const Projects = () => {
     {
       id: 1,
       project_name: "Lakme India Clone",
-      image: "/project_images/LakmeIndia.png",
+      image: "/project_images/Lakme-India.png",
       project_desc:
         "A web application to purchase high-end cosmetic products.Built using js,css,html",
       deploy_link: "https://lakme-india-clone-jp.netlify.app/",
