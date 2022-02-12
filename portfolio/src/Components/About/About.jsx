@@ -32,7 +32,7 @@ const About = () => {
       <br />
       <AboutDiv>
         <Column>
-          <Img src="/images/Mohit.webp" alt="my image" />
+          <Img src="/images/MohitGupta3-removebg-white-modified.webp" alt="my image" />
         </Column>
         <Column>
           <H1>About Me</H1>
