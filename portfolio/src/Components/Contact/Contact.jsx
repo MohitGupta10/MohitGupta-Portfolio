@@ -41,7 +41,7 @@ const footerData = [
     id: 2,
     title: "Github",
     display: "Github",
-    link: "https://github.com/12Mohit-Gupta",
+    link: "https://github.com/MohitGupta10",
     icon: <FaGithub className="commonIconsFooter" />,
   },
   {
