@@ -34,7 +34,7 @@ const Projects = () => {
       project_name: "GROWW Clone",
       image: "/project_images/GROWW.png",
       project_desc:
-        "An online stocks trading web app. Built using JS, Express js, Node js and MongoDB.",
+        "An online stocks trading web app. Built using JS, Express, Node js & MongoDB.",
       deploy_link: "https://groww-clone-u3.netlify.app/",
       repo_link: "https://github.com/12Mohit-Gupta/Clone-of-Groww",
       tech_stack: [
