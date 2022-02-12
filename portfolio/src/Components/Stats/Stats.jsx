@@ -39,7 +39,7 @@ const Stats = () => {
       <img
         src="https://ghchart.rshah.org/021F34/MohitGupta10"
         alt="fdsdf"
-        style={{ width: "80%", display: "block", margin: "auto" }}
+        style={{ width: "80%",filter:"contrast(2)", display: "block", margin: "auto" }}
       />
     </Container>
   );

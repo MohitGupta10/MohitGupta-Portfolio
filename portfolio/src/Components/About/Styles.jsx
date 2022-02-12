@@ -47,7 +47,11 @@ export const AboutInfo = styled.div`
 export const AboutInfoP = styled.div`
   font-size: 18px;
   margin-bottom: 20px;
-  color: ${(props) => props.theme.fontColorSecondary};
+  word-spacing:4;
+  text-align: justify;
+  line-height:1.8;
+  color: ${(props) => props.theme.fontColorSecondary}
+  
 `;
 
 export const HeaderUl = styled.ul`

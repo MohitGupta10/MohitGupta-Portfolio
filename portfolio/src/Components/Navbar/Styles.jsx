@@ -5,6 +5,7 @@ const NavBarDiv = styled.div`
   position: sticky;
   width: 100%;
   top: 0px;
+  z-index:2;
   box-shadow: 0 5px 20px rgba(0, 0, 0, 0.2);
   padding-left: 50px;
   padding-right: 50px;

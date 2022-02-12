@@ -3,6 +3,7 @@
   padding: 0;
   box-sizing: border-box;
   user-select: none;
+ 
 }
 
 body {
@@ -12,11 +13,14 @@ body {
 .commonIcons {
   font-size: 70px;
   margin-bottom: 15px;
+  
 }
 
 .iconsTechStack {
   font-size: 25px;
   margin: 5px;
+  
+  
   /* flex-wrap: wrap; */
 }
 
@@ -24,8 +28,10 @@ body {
   font-size: 25px;
   margin-right: 10px;
   /* margin-bottom: 15px; */
+  color:blue;
 }
 
 a:link {
   text-decoration: none;
+  
 }
