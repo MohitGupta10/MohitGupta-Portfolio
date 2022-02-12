@@ -59,7 +59,6 @@ const footerData = [
     display: "Location : Indore, India",
     link: "Indore, India",
   },
-  
 ];
 
 const Contact = () => {
