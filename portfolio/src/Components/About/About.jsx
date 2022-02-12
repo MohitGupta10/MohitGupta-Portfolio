@@ -21,7 +21,7 @@ const socialMediaLinks = [
   },
   {
     id: 1,
-    link: "https://github.com/12Mohit-Gupta",
+    link: "https://github.com/MohitGupta10",
     icon: <FaGithub />,
   },
  
