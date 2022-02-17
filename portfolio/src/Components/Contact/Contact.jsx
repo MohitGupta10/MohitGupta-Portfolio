@@ -1,3 +1,4 @@
+import emailjs from "emailjs-com";
 import React from "react";
 import {
   ContactContainer,
@@ -9,7 +10,6 @@ import {
   P,
   LinksCont,
 } from "./Styles";
-import emailjs from "emailjs-com";
 import { Container, Common, H1 } from "../../SharedStyles/SharedStyles";
 import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
@@ -62,31 +62,19 @@ const footerData = [
 ];
 
 const Contact = () => {
-  const success = () => toast.dark("Successfully Sent");
-  const failure = () => toast.error("Something went wrong");
-  console.log(process.env.REACT_APP_SERVICE_ID);
-  console.log(process.env);
-  const handleSend = (e) => {
-    e.preventDefault();
-    emailjs
-      .sendForm(
-        process.env.REACT_APP_SERVICE_ID,
-        process.env.REACT_APP_TEMPLATE_ID,
-        e.target,
-        process.env.REACT_APP_USER_ID
-      )
-      .then(
-        (result) => {
-          console.log(result.text);
-          success();
-        },
-        (error) => {
-          console.log(error.text);
-          failure();
-        }
-      );
-    e.target.reset();
-  };
+  function sendEmail(e){
+    e.preventDefault()
+     
+    emailjs.sendForm('mg08312@gmail.com', 'template_cooelvl', e.target, 'user_lNAduX4KqqX6xHK3V5S5T')
+      .then((result) => {
+          console.log(result);
+      }, (error) => {
+          console.log("byebye");
+      });
+      e.target.reset()
+  }
+  
+  
   return (
     <Container className="contact">
       <Common>
@@ -94,11 +82,11 @@ const Contact = () => {
       </Common>
       <ContactContainer>
         <Column>
-          <ContactForm onSubmit={handleSend}>
+          <ContactForm onSubmit={sendEmail}>
             <InputInput1 required name="name" type="text" placeholder="Name" />
             <InputInput1
               required
-              name="email"
+              name="user_email"
               type="email"
               placeholder="Email"
             />
@@ -107,9 +95,10 @@ const Contact = () => {
               name="message"
               placeholder="Message"
             ></InputInput2>
-            <A value="Send">SEND</A>
+            <A value="Send" type="submit">SEND</A>
+            </ContactForm>
             <ToastContainer />
-          </ContactForm>
+         
         </Column>
         <Column>
           <LinksCont>
