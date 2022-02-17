@@ -86,7 +86,7 @@ const Contact = () => {
             <InputInput1 required name="name" type="text" placeholder="Name" />
             <InputInput1
               required
-              name="user_email"
+              name="email"
               type="email"
               placeholder="Email"
             />
