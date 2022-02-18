@@ -62,19 +62,27 @@ const footerData = [
 ];
 
 const Contact = () => {
-  function sendEmail(e){
-    e.preventDefault()
-     
-    emailjs.sendForm('mg08312@gmail.com', 'template_cooelvl', e.target, 'user_lNAduX4KqqX6xHK3V5S5T')
-      .then((result) => {
-          console.log(result);
-      }, (error) => {
+  function sendEmail(e) {
+    e.preventDefault();
+
+    emailjs
+      .sendForm(
+        "mg08312@gmail.com",
+        "template_cooelvl",
+        e.target,
+        "user_lNAduX4KqqX6xHK3V5S5T"
+      )
+      .then(
+        (result) => {
+          alert("Send the message I will reply you");
+        },
+        (error) => {
           console.log("byebye");
-      });
-      e.target.reset()
+        }
+      );
+    e.target.reset();
   }
-  
-  
+
   return (
     <Container className="contact">
       <Common>
@@ -95,10 +103,11 @@ const Contact = () => {
               name="message"
               placeholder="Message"
             ></InputInput2>
-            <A value="Send" type="submit">SEND</A>
-            </ContactForm>
-            <ToastContainer />
-         
+            <A value="Send" type="submit">
+              SEND
+            </A>
+          </ContactForm>
+          <ToastContainer />
         </Column>
         <Column>
           <LinksCont>
