@@ -74,7 +74,7 @@ const Contact = () => {
       )
       .then(
         (result) => {
-          alert("Send the message I will reply you");
+          alert("Send the Meassage Successfully");
         },
         (error) => {
           console.log("byebye");
