@@ -62,6 +62,8 @@ const footerData = [
 ];
 
 const Contact = () => {
+  const success = () => toast.dark("Successfully Sent");
+  const failure = () => toast.error("Something went wrong")
   function sendEmail(e) {
     e.preventDefault();
 
@@ -74,10 +76,12 @@ const Contact = () => {
       )
       .then(
         (result) => {
-          alert("Send the Meassage Successfully");
+          console.log("Send the Meassage Successfully");
+          success();
         },
         (error) => {
           console.log("byebye");
+          failure();
         }
       );
     e.target.reset();
