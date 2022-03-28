@@ -4,7 +4,6 @@ import { Container } from "../../SharedStyles/SharedStyles";
 import { Link } from "react-scroll";
 import "./typing.css";
 
-
 const Banner = () => {
   return (
     <Container className="home">
@@ -22,11 +21,7 @@ const Banner = () => {
             creating useful and interactive web applications.
           </P>
           <HeaderButtons>
-            <A
-              target="_blank"
-              rel="noreferrer"
-              href="/resume/Mohit-Gupta-Fw11_333.pdf"
-            >
+            <A target="_blank" rel="noreferrer" href="/resume/Mohit-Resume.pdf">
               Resume
             </A>
             &nbsp;&nbsp;&nbsp;
