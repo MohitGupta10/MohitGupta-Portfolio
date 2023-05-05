@@ -22,13 +22,9 @@ const Projects = () => {
         "A web application to purchase high-end cosmetic products.Built using js,css,html",
       deploy_link: "https://lakme-india-clone-jp.netlify.app/",
       repo_link: "https://github.com/12Mohit-Gupta/Consruct-Week-Lakme-Project",
-      tech_stack: [
-        <FaJs />,
-        <FaHtml5 />,
-        <FaCss3 />,
-      ],
+      tech_stack: [<FaJs />, <FaHtml5 />, <FaCss3 />],
     },
-    
+
     {
       id: 2,
       project_name: "GROWW Clone",
@@ -46,9 +42,25 @@ const Projects = () => {
         <FaNodeJs />,
       ],
     },
-  
-   ];
-  
+    {
+      id: 3,
+      project_name: "Meesho-clone",
+      image: "project_images/Meesho.png",
+      project_desc:
+        "This website based on E-Commerce.Built useing Reactjs,Mongodb,Nodejs,Express,Html,Css",
+      deploy_link: "https://meesho-two.vercel.app/",
+      repo_link: "https://github.com/MohitGupta10/meesho-app",
+      tech_stack: [
+        <FaHtml5 />,
+        <FaCss3 />,
+        <FaJs />,
+        <FaNodeJs />,
+        <SiMongodb />,
+        <FaNodeJs />,
+      ],
+    },
+  ];
+
   return (
     <Container className="projects">
       <ProjectDiv>
